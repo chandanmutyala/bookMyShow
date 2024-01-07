@@ -13,13 +13,14 @@ public class ShowOutputs {
     private int amount;
     private String section;
 
-    public ShowOutputs(Date day, Time time, char row, String movie, int seatNo, int noOfSeats) {
+    public ShowOutputs(Date day, Time time, char row, String movie, int seatNo, int amount,int noOfSeats) {
         this.day = day;
         this.time = time;
         this.row = row;
         this.movie = movie;
         this.seatNo = seatNo;
         this.noOfSeats = noOfSeats;
+        this.amount=amount;
 
     }
 
@@ -53,5 +54,9 @@ public class ShowOutputs {
 
     public String getSection() {
         return section;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
     }
 }

@@ -10,12 +10,12 @@ public class ticketProcessing {
         if ( value == 'A' || value == 'B' || value == 'C'){
             price=150;
         }
-        if ( value == 'Z' || value == 'Y' || value == 'X'){
+        else if ( value == 'Z' || value == 'Y' || value == 'X'){
             price=50;
         }else{
             price=100;
         }
-        ShowOutputs output=new ShowOutputs(inputs.getDay(),inputs.getTime(), (char) price,inputs.getMovie(),inputs.getSeatNo(),inputs.getNoOfSeats());
+        ShowOutputs output=new ShowOutputs(inputs.getDay(),inputs.getTime(),inputs.getRow(),inputs.getMovie(),inputs.getSeatNo(), price ,inputs.getNoOfSeats());
 
         return output;
     }

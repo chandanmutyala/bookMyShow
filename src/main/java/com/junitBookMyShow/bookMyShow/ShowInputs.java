@@ -11,9 +11,9 @@ public class ShowInputs {
     private String movie;
     private int seatNo;
     private int noOfSeats;
-    private int amount;
 
-    public ShowInputs(int mobileNo, Date day, Time time, char row, String movie, int seatNo, int noOfSeats,int amount) {
+
+    public ShowInputs(int mobileNo, Date day, Time time, char row, String movie, int seatNo, int noOfSeats) {
         this.mobileNo = mobileNo;
         this.day = day;
         this.time = time;
@@ -21,7 +21,6 @@ public class ShowInputs {
         this.movie = movie;
         this.seatNo = seatNo;
         this.noOfSeats = noOfSeats;
-        this.amount=amount;
     }
 
     public int getMobileNo() {
